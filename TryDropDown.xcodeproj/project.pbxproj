@@ -12,7 +12,48 @@
 		11E9406D20F5D6B1004DE81F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11E9406B20F5D6B1004DE81F /* Main.storyboard */; };
 		11E9406F20F5D6BD004DE81F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11E9406E20F5D6BD004DE81F /* Assets.xcassets */; };
 		11E9407220F5D6BD004DE81F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11E9407020F5D6BD004DE81F /* LaunchScreen.storyboard */; };
+		11E9407C20F5D8A2004DE81F /* DropDown in Resources */ = {isa = PBXBuildFile; fileRef = 11E9407B20F5D8A2004DE81F /* DropDown */; };
+		11E9408520F5E385004DE81F /* DropDown.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11E9408220F5D8C4004DE81F /* DropDown.framework */; };
+		11E9408620F5E385004DE81F /* DropDown.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 11E9408220F5D8C4004DE81F /* DropDown.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		11E9408120F5D8C4004DE81F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 11E9407D20F5D8C4004DE81F /* DropDown.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0AB5D8711D0EEECD002D3A17;
+			remoteInfo = DropDown;
+		};
+		11E9408320F5D8D2004DE81F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 11E9407D20F5D8C4004DE81F /* DropDown.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 0AB5D8701D0EEECD002D3A17;
+			remoteInfo = DropDown;
+		};
+		11E9408720F5E385004DE81F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 11E9407D20F5D8C4004DE81F /* DropDown.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 0AB5D8701D0EEECD002D3A17;
+			remoteInfo = DropDown;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		11E9408920F5E385004DE81F /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				11E9408620F5E385004DE81F /* DropDown.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		11E9406420F5D6B0004DE81F /* TryDropDown.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TryDropDown.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -22,6 +63,8 @@
 		11E9406E20F5D6BD004DE81F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		11E9407120F5D6BD004DE81F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		11E9407320F5D6BD004DE81F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		11E9407B20F5D8A2004DE81F /* DropDown */ = {isa = PBXFileReference; lastKnownFileType = folder; path = DropDown; sourceTree = "<group>"; };
+		11E9407D20F5D8C4004DE81F /* DropDown.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = DropDown.xcodeproj; path = ../../DropDown/DropDown.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11E9408520F5E385004DE81F /* DropDown.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -38,6 +82,8 @@
 		11E9405B20F5D6B0004DE81F = {
 			isa = PBXGroup;
 			children = (
+				11E9407D20F5D8C4004DE81F /* DropDown.xcodeproj */,
+				11E9407B20F5D8A2004DE81F /* DropDown */,
 				11E9406620F5D6B1004DE81F /* TryDropDown */,
 				11E9406520F5D6B1004DE81F /* Products */,
 			);
@@ -64,6 +110,14 @@
 			path = TryDropDown;
 			sourceTree = "<group>";
 		};
+		11E9407E20F5D8C4004DE81F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				11E9408220F5D8C4004DE81F /* DropDown.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,10 +128,13 @@
 				11E9406020F5D6B0004DE81F /* Sources */,
 				11E9406120F5D6B0004DE81F /* Frameworks */,
 				11E9406220F5D6B0004DE81F /* Resources */,
+				11E9408920F5E385004DE81F /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				11E9408420F5D8D2004DE81F /* PBXTargetDependency */,
+				11E9408820F5E385004DE81F /* PBXTargetDependency */,
 			);
 			name = TryDropDown;
 			productName = TryDropDown;
@@ -110,6 +167,12 @@
 			mainGroup = 11E9405B20F5D6B0004DE81F;
 			productRefGroup = 11E9406520F5D6B1004DE81F /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 11E9407E20F5D8C4004DE81F /* Products */;
+					ProjectRef = 11E9407D20F5D8C4004DE81F /* DropDown.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				11E9406320F5D6B0004DE81F /* TryDropDown */,
@@ -117,12 +180,23 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXReferenceProxy section */
+		11E9408220F5D8C4004DE81F /* DropDown.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = DropDown.framework;
+			remoteRef = 11E9408120F5D8C4004DE81F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
 /* Begin PBXResourcesBuildPhase section */
 		11E9406220F5D6B0004DE81F /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				11E9407220F5D6BD004DE81F /* LaunchScreen.storyboard in Resources */,
+				11E9407C20F5D8A2004DE81F /* DropDown in Resources */,
 				11E9406F20F5D6BD004DE81F /* Assets.xcassets in Resources */,
 				11E9406D20F5D6B1004DE81F /* Main.storyboard in Resources */,
 			);
@@ -141,6 +215,19 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		11E9408420F5D8D2004DE81F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = DropDown;
+			targetProxy = 11E9408320F5D8D2004DE81F /* PBXContainerItemProxy */;
+		};
+		11E9408820F5E385004DE81F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = DropDown;
+			targetProxy = 11E9408720F5E385004DE81F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		11E9406B20F5D6B1004DE81F /* Main.storyboard */ = {
@@ -279,6 +366,7 @@
 		11E9407720F5D6BD004DE81F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GU946UBV7L;
@@ -297,6 +385,7 @@
 		11E9407820F5D6BD004DE81F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GU946UBV7L;
